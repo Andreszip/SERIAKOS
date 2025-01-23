@@ -5,7 +5,7 @@ from django.contrib import messages
 # Create your views here.
 
 def home(request):
-    return render(request, 'Users/base.html')
+    return render(request, 'base.html')
 
 
 def register(request):
