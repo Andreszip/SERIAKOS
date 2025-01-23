@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin: 1em 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            padding: 0.5em 1em;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Página Principal</h1>
+        <p>Bienvenido a nuestra aplicación Django</p>
+    </header>
+    <nav>
+        <a href="{% url 'Orders' %}">Orders</a>
+        <a href="{% url 'Products' %}">Productos</a>
+        <a href="{% url 'Services' %}">Servicios</a>
+        <a href="{% url 'Users' %}">Usuarios</a>
+    </nav>
+    <main>
+        <h2>Seleccione una opción del menú para comenzar</h2>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mi Empresa</p>
+    </footer>
+</body>
+</html>

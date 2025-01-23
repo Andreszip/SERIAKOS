@@ -3,6 +3,11 @@ from django.contrib.auth import login
 from .forms import UserRegisterForm
 from django.contrib import messages
 # Create your views here.
+
+def home(request):
+    return render(request, 'Users/base.html')
+
+
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
