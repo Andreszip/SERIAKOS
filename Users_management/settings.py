@@ -70,7 +70,7 @@ TEMPLATES = [
 
                 'social_django.context_processors.backends',
                 'social_django.context_processors.login_redirect',
-                'messaging.context_processors.unread_messages_count',           ],
+                           ],
         },
     },
 ]
